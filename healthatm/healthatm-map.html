@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html> 
+<html lang="zh-Hans-TW"> 
+<head><meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="keywords" content="H2U,健康ATM,健康小站,永齡基金會,永齡健康,千禧健康小站,7-11健康,7-11量測." />
+<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0"> 
+
+    <title>H2U健康ATM官方網站</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../healthatm/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../healthatm/css/icon-style.css">
+    <link rel="stylesheet" href="../healthatm/css/style.css">
+    <!--<link href="../healthatm/css/lightbox.css" rel="stylesheet">-->
+    <link href="../healthatm/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../healthatm/css/animate.css">
+     <link href="../healthatm/css/googlemap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="Shortcut Icon" type="image/x-icon" href="http://h2uclub.com/healthatm/img/favicon.ico" />
+</head>
+
+
+<body>
+
+<nav>
+  
+  
+   <div class="toogleBtnMenu">
+      
+    <button id="toogleBtn" class="navbar-toggler" onclick="toogleBtn();">
+        <span class="hamburger"></span>
+    </button>
+       
+   </div>
+    
+    
+    
+    <div id="amtNavbar" class="fixed-top">
+      
+      
+       <div class="bard">
+
+       <div id="logo">
+       <a href="../healthatm.html"><img src="../healthatm/img/logo.png" class="img-fluid"alt=""></a>
+       </div>
+       
+       </div>
+       
+       <div id="navMenu" class="fixed-top">
+       
+        <ul>
+
+<!--            <li><img src="healthatm/img/logo.png" class="img-fluid" alt=""></li>-->
+           
+           
+            <li><a href="../healthatm.html#H2UfirstP">健康ATM</a></li>
+            <li><a href="../healthatm.html#ServiceCenterP">服務據點</a></li>
+            <li><a href="../healthatm.html#UpDataP">輕鬆上傳</a></li>
+            <li><a href="../healthatm.html#UserP">健康計畫</a></li>  
+            <li><a href="../healthatm.html#CollectP">健康積點</a></li>
+<!--            <li><a href="../healthatm.html#CityP">發現更多</a></li>-->
+            <li><a href="../healthatm.html#aboutWe">合作洽談</a></li>
+
+        </ul>
+        </div>
+
+   
+    </div>
+    
+
+    
+    
+
+    
+</nav>
+
+
+
+
+
+
+<div id="map" style="margin-top: 65px;"></div>
+
+    <div id="informationBar">
+        
+        <h4 style="margin-top:10px; margin-left:15px;">關鍵字搜尋</h4>
+
+        <div id="search" class="input-group">
+            <input type="text" id="searchBar" class="form-control" placeholder="請輸入關鍵字，例如：新店">
+            <div class="input-group-btn">
+                <button id="searching" class="btn btn-atm" type="submit">搜尋</button>
+            </div>
+        </div>
+        <span id="clearBtn" class="label fa fa-remove">清除搜尋條件</span>
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#north" role="tab" aria-controls="north" aria-selected="true">北部</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#central" role="tab" aria-controls="central" aria-selected="true">中部</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#south" role="tab" aria-controls="south" aria-selected="true">南部</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#east" role="tab" aria-controls="east" aria-selected="true">東部</a>
+                </li>
+            </ul>
+        
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="north" role="tabpanel" aria-labelledby="home-tab">...north</div>
+            <div class="tab-pane fade" id="central" role="tabpanel" aria-labelledby="profile-tab">...central</div>
+            <div class="tab-pane fade" id="south" role="tabpanel" aria-labelledby="contact-tab">...south</div>
+            <div class="tab-pane fade" id="east" role="tabpanel" aria-labelledby="contact-tab">...east</div>
+        </div>
+    </div>
+
+
+    <div id="infoForPhone" class="jumbotron">
+
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../healthatm/js/googlemap.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX6ov0vPyFq9I8J1o7nJiHJYfdwjRFBB4&callback=initMap" async defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55531555-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-55531555-8');
+    </script>
+
+    <script src="https://unpkg.com/masonry-layout@4.2.0/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../healthatm/js/wow.min.js"></script>
+    <script> new WOW().init();</script>
+    <script src="../healthatm/js/bootstrap.min.js"></script>
+    <!--<script src="../healthatm/js/script.js"></script>-->
+    <script src="../healthatm/js/scroll.js"></script>
+
+    
+</body>
+
+</html>

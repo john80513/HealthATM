@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?2zvnr2');
+  src:  url('fonts/icomoon.eot?2zvnr2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2zvnr2') format('truetype'),
+    url('fonts/icomoon.woff?2zvnr2') format('woff'),
+    url('fonts/icomoon.svg?2zvnr2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-atm-Star:before {
+  content: "\e91e";
+}
+.icon-atm-Leaf:before {
+  content: "\e91d";
+}
+.icon-atm-BloodPressure-12080-o:before {
+  content: "\e91c";
+}
+.icon-atm-BloodPressure-12080:before {
+  content: "\e900";
+}
+.icon-atm-BloodPressure:before {
+  content: "\e901";
+}
+.icon-atm-BloodPressureC:before {
+  content: "\e902";
+}
+.icon-atm-Bmi:before {
+  content: "\e903";
+}
+.icon-atm-Thermometer-o:before {
+  content: "\e904";
+}
+.icon-atm-Thermometer:before {
+  content: "\e905";
+}
+.icon-atm-WeightScale-o:before {
+  content: "\e906";
+}
+.icon-atm-WeightScale:before {
+  content: "\e907";
+}
+.icon-tw-Changhua:before {
+  content: "\e908";
+}
+.icon-tw-Chiayi:before {
+  content: "\e909";
+}
+.icon-tw-ChiayiCity:before {
+  content: "\e90a";
+}
+.icon-tw-Hsinchu:before {
+  content: "\e90b";
+}
+.icon-tw-HsinchuCity:before {
+  content: "\e90c";
+}
+.icon-tw-Hualien:before {
+  content: "\e90d";
+}
+.icon-tw-Kaohsiung:before {
+  content: "\e90e";
+}
+.icon-tw-Keelung:before {
+  content: "\e90f";
+}
+.icon-tw-Miaoli:before {
+  content: "\e910";
+}
+.icon-tw-Nantou:before {
+  content: "\e911";
+}
+.icon-tw-NewsTaipei:before {
+  content: "\e912";
+}
+.icon-tw-Penghu:before {
+  content: "\e913";
+}
+.icon-tw-Pingtung:before {
+  content: "\e914";
+}
+.icon-tw-Taichung:before {
+  content: "\e915";
+}
+.icon-tw-Tainan:before {
+  content: "\e916";
+}
+.icon-tw-Taipei:before {
+  content: "\e917";
+}
+.icon-tw-Taitung:before {
+  content: "\e918";
+}
+.icon-tw-Taoyuan:before {
+  content: "\e919";
+}
+.icon-tw-Yilan:before {
+  content: "\e91a";
+}
+.icon-tw-Yunlin:before {
+  content: "\e91b";
+}

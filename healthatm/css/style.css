@@ -1,0 +1,2155 @@
+﻿@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    
+    height: 65px;
+}
+
+body{
+    
+
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+/*    background-color: #34304A;*/
+/*    width: 100vw; 設定一定要加 不然網頁版 會出現二個捲軸*/
+/*    overflow-x: hidden; 設定這個內容溢出的部份會被隱藏 針對手機版 向左滑時會看到內容物*/
+    
+    
+    
+}
+
+
+html{
+    
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+/*    overflow-x: hidden; 設定這個內容溢出的部份會被隱藏 針對手機版 向左滑時會看到內容物 */
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    
+    text-decoration: none;
+}
+
+
+button{
+    
+    outline: none;
+    cursor: pointer;
+}
+
+
+footer{
+    
+    color: white;
+    text-align: center;
+    padding: 50px;
+    background-color: #34304A;
+}
+
+
+
+footer p{
+    
+    padding-top: 15px;
+    font-size: 20px;
+    color: white!important;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 300;
+}
+
+
+.icon-atm-Leaf,
+.icon-atm-Star{
+    
+  color: #53d4bf;
+  font-size: 20px;
+  padding-right: 5px;
+  padding-top: 5px;
+
+}
+
+.icon-atm-Star{
+    
+    color: #e15d27;
+}
+
+.keyword-atm-600{
+    
+    font-weight: 600;
+}
+
+.keyword-atmOrange{
+    
+    color: #e15d27!important;
+    font-weight: 600;
+    font-size: 16px!important;
+    padding: 0px !important;
+}
+
+
+.keyword-atmBlue{
+    
+    color: #34304A!important;
+    font-weight: 600;
+    font-size: 16px!important;
+    padding: 0px !important;
+}
+
+
+.keyword-bt-b{
+    
+    border-bottom: 1px solid #34304A!important; 
+}
+
+.keyword-bt-o{
+    
+    border-bottom: 1px solid #e15d27!important; 
+}
+
+
+.back-to-top{
+  
+	display: none;
+    
+}
+
+
+
+.back-to-top i{
+    
+    
+	position: fixed;
+    bottom: 50px;
+    right: 0;
+    margin-right: 25px;
+    font-size: 30px;
+    background-color: #f98407;
+    color: white;
+    padding: 0 10px 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1075;
+}
+
+
+.ILikeBtn,
+.UserILikeBtn{
+    
+    font-size: 35px;
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: white;
+}
+
+
+
+.ILikeBtn:hover,
+.UserILikeBtn:hover{
+    
+    border: 1px solid #e15d27;
+    border-color: #e15d27;
+    background-color: #e15d27;
+    color: white;
+}
+
+
+.UserILikeBtn{
+
+    font-size: 20px;
+    background-color: #54d4bf;
+    border-color: #54d4bf;
+}
+
+.UserILikeBtn:hover{
+
+    background-color: #54d4bf;
+    border-color: #54d4bf;
+}
+
+
+
+
+.amt-color-darkbule{
+    
+    color: #34304A;
+}
+
+.amt-color-lightOrange{
+    
+    color: #efeae6; 
+}
+
+
+.amt-color-Orange{
+    
+    color: #e15d27;
+}
+
+
+.amt-color-light-c{
+    
+    color: #efe9e5;
+}
+
+
+.atmicons {
+    
+    font-size: 100px;
+    color: #e15d27;
+    padding-bottom: 0px;
+}
+
+
+.atmicons-white{
+    
+    color: white !important;
+}
+
+
+/*
+#amtNavbar::-webkit-scroll{
+    display: none;
+}
+*/
+
+#amtNavbar{
+    
+    width: 100%;
+    height: 65px;
+    background-color: rgba(239, 234, 230, 0.9); 
+    transition: ease-in-out 500ms;
+
+}
+
+
+
+
+#navMenu{
+    
+    width: 0px;
+    height: 100%;
+    transition: ease-in-out 500ms;
+    
+  
+}
+
+
+#navMenu ul{
+    
+    width: 120px;
+    background-color: #34304A;
+    margin-left: -120px;
+    padding-top: 65px;
+    height: 100%;
+    
+    
+}
+
+#navMenu li{
+    
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(77, 42, 15, 0.2); 
+    
+   
+}
+
+#navMenu li:first-child{
+    
+    border-top: 1px solid rgba(77, 42, 15, 0.2); 
+}
+
+#navMenu li:last-child{
+    
+/*    border-bottom: none;*/
+}
+
+
+    
+
+#navMenu li a{
+    
+
+    color: white;
+}
+
+
+#navMenu li:hover,
+#navMenu li:hover .amtNavbar ul li a{
+    
+    
+    color: white;
+    background-color: rgba(225, 93, 39, 0.8);
+}
+
+
+.bard{
+    
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+
+.bard button{
+    
+    outline: none;
+}
+
+
+.bard #logo{
+   
+    position: absolute;
+    text-align: right;
+    margin-top: 15px;
+    width: 100%; 
+    transition: ease-in-out 500ms;
+    z-index: 1090;
+    
+}
+
+
+
+.myVideo {
+    margin-top: 65px;
+    height: auto;
+}
+
+#keyVideo {
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -100;
+}
+
+
+
+.bard #logo img{
+    
+    width: 110px;
+    height: 28px;
+    margin-right: 25px;
+    
+}
+
+.toogleBtnMenu{
+    
+    position: relative;
+}
+
+#toogleBtn{
+    
+    position: fixed;
+    top: 25px;
+    margin-left: 15px;
+    transition: ease-in-out 500ms;
+    z-index: 1075;
+    outline: none;
+}
+
+
+
+
+.hamburger,
+.hamburger::after,
+.hamburger::before{
+    
+    content: '';
+    display: block;
+    background-color: black;
+    height: 3px;
+    width: 25px;
+    border-radius: 10px;
+    transition: all ease-in-out 350ms;
+      
+}
+
+
+.hamburger::before{
+    
+  transform: translateY(-7px);
+  
+}
+
+.hamburger::after{
+  transform:translateY(4px);
+}
+
+
+
+.open .hamburger {
+    
+    transform:rotate(45deg);
+    background-color: white;
+    
+}
+
+.open .hamburger::after {
+    
+    transform: translateY(-3px) rotate(-90deg);
+    background-color: white;
+    
+}
+
+
+.open .hamburger::before {
+    
+
+  opacity: 0;
+    
+}
+
+#Content{
+    
+    background-color: white;
+    width: 100%;
+    transition: ease-in-out 500ms;
+}
+
+
+#Content h3,
+footer h3{
+    
+    color: #e15d27;
+    font-weight: 400;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+
+#Content p{
+    
+    color: #777;
+    font-weight: 300;
+}
+
+
+
+#GoTop{
+    
+    
+	visibility: hidden;
+    transition: all 1500ms;
+    
+
+}
+
+
+
+#GoTop i{
+    
+    
+	position: fixed;
+    bottom: 50px;
+    right: 0;
+    margin-right: 25px;
+    font-size: 30px;
+    background-color: #f98407;
+    color: white;
+    padding: 0 10px 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1075;
+}
+
+
+
+.H2Ufirst{
+    
+    background-color: white;
+    text-align: center;
+  
+}
+
+.H2Ufirst-img{
+    
+    width: 100%;
+    text-align: center;
+}
+
+
+.H2Ufirst-img img{
+    
+    width: 70%;
+    height: auto;
+}
+
+.H2Ufirst p{
+    
+    font-size: 16px;
+    line-height: 35px;
+    padding: 0 10px;
+  
+}
+
+.H2UfirstTit i{
+    
+    font-size: 40px;
+    color: #e15d27;
+    padding-right: 15px;
+}
+
+.H2UfirstTit h5{
+    
+    color: #34304A;
+}
+
+
+.H2UfirstTit p{
+    
+    padding: 15px 0;
+    line-height: 25px;
+    text-align: left;
+}
+
+
+.H2UfirstContent{
+    
+    text-align: left;
+}
+
+
+.H2Ufirst-2{
+    
+    padding: 15px 0;
+}
+
+
+.H2Ufirst-2 .Note{
+    
+/*    background-color: #34304A;*/
+    margin-top: 25px;
+    text-align: left;
+    border-radius: 15px;
+    border: 1px solid #34304A;
+    padding-top: 15px;
+}
+
+.showpic{
+    
+    text-align: center;
+    width: 100%;
+}
+#showpic{
+    
+    width: 80%;
+    height: auto;
+
+}
+
+#showpic img{
+    
+    opacity: 0;
+    transition: 500ms;
+
+}
+
+
+
+/*===================animation===============*/
+/*===================animation===============*/
+
+
+
+.H2UfirstText p{
+    
+    color: black!important;
+    font-size: 14px;
+    font-weight: 500!important;
+    padding: 0 20px 0 0;
+    text-align: justify!important; 
+    
+}
+
+.Note p{
+    
+    font-weight: 600 !important;
+    line-height: 25px;
+}
+
+
+.H2UfirstRight{
+    
+    text-align: left;
+}
+
+.H2UfirstRightContent span{
+    
+    color: #e15d27;
+    font-size: 50px;
+    padding: 0 15px;
+}
+
+
+.H2UfirstRightContent{
+    
+    padding: 20px 0px 10px 10px;
+    
+}
+.RightContentColor{
+    
+    background-color: rgba(52, 48, 74, 0.03);
+    
+}
+
+.Step h5{
+    
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.Step span{
+    
+    font-size: 24px;
+    background-color: #e15d27;
+    padding: 7px 15px;
+    border-radius: 50px;
+    margin-right: 15px;
+    color: white;
+    
+}
+
+
+
+/*
+==========================ServiceCenter===============================
+==========================ServiceCenter===============================
+*/
+
+
+
+/*
+.keytit{
+   
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    font-size: 20px;
+    font-family: serif;
+}
+
+
+.keytit p{
+    
+    margin-top: 25px;
+    font-size: 16px;
+    color: #ffffff !important;
+    letter-spacing: 15px;
+}
+*/
+
+
+
+
+.ServiceCenter{
+    
+    text-align: center;
+    padding: 50px 15px 80px 15px;
+    background-color: #34304A;
+}
+
+
+.ServiceCenter h3,
+.ServiceCenter p{
+    
+    color: white !important;
+}
+
+.ServiceCenter p{
+    
+    margin-top: -25px;
+}
+
+.ServiceCenter .ILikeBtn i{
+    
+    font-size: 32px;
+    padding-right: 15px;
+}
+
+
+/*
+==========================UpData===============================
+==========================UpData===============================
+*/
+.aboutWe{
+    
+    background-color: #34304A;
+}
+
+.UpData,.User,.Collect,.City,.aboutWe{
+    
+    text-align: center;
+    padding: 25px 15px;
+}
+
+
+.UpData{
+    
+    background-color: #34304A;
+}
+
+
+
+
+
+
+.User{
+    
+    padding: 50px 0;
+    background-image: none;
+    background-image: url(../img/user-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.UserContent {
+    padding-bottom: 15px;
+}
+
+.UserContent h3{
+    
+    color: white!important;
+    padding-top: 65px;
+}
+
+.UserContent p{
+    
+    text-align: left;
+
+}
+    
+
+
+ 
+}
+
+.UserContent-img{
+    
+    width: 60%;
+    margin: auto;
+    height: auto;
+}
+
+
+.user .ILikeBtn{
+    
+    margin-bottom: 25px;
+    
+}
+
+
+.user-item{
+    
+    position: relative;
+    margin-top: 50px;
+}
+
+
+.user-itemContent{
+    width: 100%;
+    text-align: center;
+    position: static;
+}
+
+
+
+.aboutWe h3,
+.City h3,
+.Collect h3,
+.H2Ufirst h3,
+.ServiceCenter h3,
+.UpData h3,
+.User h3{
+    
+    padding-bottom: 25px;
+}
+
+.UpDataTitContent h3{
+    
+    color: white!important;
+}
+
+
+.UpDataTitContent p{
+    
+    text-align: left;
+    color: white!important;
+}
+
+.UpData p,
+.User p{
+    
+    line-height: 35px;
+}
+
+
+.User p{
+
+    color: #ffffff!important;
+
+}
+
+
+
+
+
+
+.UpDataContent{
+    
+    border: 1px solid #a5a3a2;
+    border-radius: 20px;
+    text-align: left;
+    padding: 30px 15px;
+}
+
+
+.UpDataContent h4{
+    
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+
+}
+
+
+
+.UpDataContent p{
+ 
+    line-height: 35px;
+    height: auto;
+    color: white !important;
+}
+
+.UpIconsControl{
+    
+    text-align: center;
+}
+
+
+
+
+.UpDataContent i{
+    
+    
+    font-size: 100px;
+    padding: 15px 5px;
+    text-align: center;
+    color: white;
+}
+
+
+.UserMarTop15{
+    
+    margin-top: 0px;
+}
+
+
+.Collect{
+    
+    background-color: #efeae6; 
+}
+
+
+.CollectTit p{
+    
+    text-align: left;
+    line-height: 35px;
+    font-size: 16px;
+}
+
+
+.CollectTit h4{
+    
+    font-size: 16px;
+    color: #35304a;
+    font-weight: 600;
+    padding: 15px 0;
+    text-align: left;
+}
+
+
+.CollectMarTop-350{
+    
+    margin-top: 0px;
+}
+
+.CollectItemBoder{
+    
+/*    border: 1px solid rgba(52, 48, 74, 0.1); */*/
+    /* border-radius: 15px; */
+    padding: 0;
+}
+
+
+.CollectItemContent p{
+    
+    text-align: center;
+    line-height: 45px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.CollectItemContent h5{
+    
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+    padding-bottom: 25px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(119, 119, 119, 0.1);
+}
+
+
+.CollectItemContent h6 {
+    
+    color: #34304A;
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+
+.CollectItemContent{
+    
+    text-align: center;
+    background-color: rgba(225, 93, 39, 0.1);
+    padding: 25px 25px 5px 25px;
+}
+
+.CollectItemContent-W{
+    
+    background-color: rgba(52, 48, 74, 0.1) !important;
+}
+
+.CollectItem2{
+    
+    text-align: center;
+    padding: 0 15px;
+}
+
+.CollectItem2Item {
+
+    text-align: center;
+    padding-top: 15px;
+
+
+}
+
+
+.Item-l {
+
+    text-align: left!important;
+
+}
+
+
+.Item-l i:first-child{
+    
+    padding-left: 20px!important;
+    
+}
+
+.CollectItem2Item i{
+    
+    font-size: 12px;
+    color: #e15d27;
+    padding-left: 2px;
+}
+
+
+.CollectItem2Item i:first-child{
+    
+    padding-left: 25px;
+}
+
+.CollectItem2-bg{
+
+    background-color: rgba(52, 48, 74, 0.1);
+
+}
+
+
+.CollectItem2Note {
+
+    text-align: left;
+    margin-top: 15px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+.CollectItem2Note p{
+    font-size:  14px;
+    padding: 10px 0 0 0;
+    line-height: 25px;
+}
+
+
+
+.control-h{
+    
+    height: 75px!important;
+} 
+
+
+.aboutWe h3,
+.aboutWe p,
+.aboutWe a,
+.aboutWe t{
+    
+    color: white !important;
+}
+
+
+.br-25{
+    
+    border-radius: 25px;
+}
+
+
+.twMap{
+    
+    position: relative;
+    width: 100%;
+    padding: 35px;
+}
+
+.MapMenu{
+    
+    position: relative;
+    text-align: center;
+    margin-left: 0;
+    
+}
+
+.MapMenu i,
+.MapMenu li{
+    
+    font-size: 16px;
+    
+    
+}
+.MapMenu li{
+    
+    color: #bbb;
+    list-style-type: none;
+    display: block;
+    padding: 10px 0;
+    font-weight: 300;
+    
+}
+
+.MapMenu i{
+    
+    color: #e15d27;
+    padding-right: 15px;
+    
+}
+
+.MapIcons { 
+    
+    position: relative;
+    margin-top: 35px;
+    margin-right: 8px;
+	
+}
+
+.MapIcons span{
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+
+
+}
+
+
+
+
+.icon-tw-Penghu,
+.icon-tw-ChiayiCity,
+.icon-tw-Taitung,
+.icon-tw-Hualien,
+.icon-tw-Yilan,
+.icon-tw-Pingtung,
+.icon-tw-Kaohsiung,
+.icon-tw-Tainan,
+.icon-tw-Chiayi,
+.icon-tw-Yunlin,
+.icon-tw-Changhua,
+.icon-tw-Nantou,
+.icon-tw-Taichung,
+.icon-tw-Miaoli,
+.icon-tw-HsinchuCity,
+.icon-tw-Hsinchu,
+.icon-tw-Taichung,
+.icon-tw-Taoyuan,
+.icon-tw-Keelung,
+.icon-tw-NewsTaipei,
+.icon-tw-Taipei{
+    
+    color: #e15d27;
+    transition: 200ms;
+    
+}
+
+
+.icon-tw-Penghu:hover,
+.icon-tw-ChiayiCity:hover,
+.icon-tw-Taitung:hover,
+.icon-tw-Hualien:hover,
+.icon-tw-Yilan:hover,
+.icon-tw-Pingtung:hover,
+.icon-tw-Kaohsiung:hover,
+.icon-tw-Tainan:hover,
+.icon-tw-Chiayi:hover,
+.icon-tw-Yunlin:hover,
+.icon-tw-Changhua:hover,
+.icon-tw-Nantou:hover,
+.icon-tw-Taichung:hover,
+.icon-tw-Miaoli:hover,
+.icon-tw-HsinchuCity:hover,
+.icon-tw-Hsinchu:hover,
+.icon-tw-Taichung:hover,
+.icon-tw-Taoyuan:hover,
+.icon-tw-Keelung:hover,
+.icon-tw-NewsTaipei:hover,
+.icon-tw-Taipei:hover {
+    
+    color: #bc7f66 !important;;
+    transition: 200ms;
+    
+}
+
+
+.color-20{
+    
+    color: rgba(225, 93, 39, 0.2)!important;
+}
+
+
+.color-40{
+    
+    color: rgba(225, 93, 39, 0.4) !important;
+}
+
+
+.color-60{
+    
+    color: rgba(225, 93, 39, 0.6)!important;
+}
+
+
+.color-80{
+    
+    color: rgba(225, 93, 39, 0.8) !important;
+}
+
+
+.icon-tw-NewsTaipei{
+
+    font-size: 100px;
+    margin-top: -16px;
+    margin-right: 28px;
+
+}
+
+.icon-tw-Taipei{
+    
+   
+    font-size: 37px;
+    margin-top: 1px;
+    margin-right: 85px;
+    z-index: 1010;
+
+    
+}
+
+
+
+.icon-tw-Yilan{
+ 
+    font-size: 108px;
+    margin-top: 35px;
+    margin-right: 35px;
+    
+}
+
+
+
+
+.icon-tw-Hualien{
+ 
+    font-size: 194px;
+    margin-top: 137px;
+    margin-right: 58px;
+    
+}
+
+
+.icon-tw-Taitung{
+ 
+    font-size: 238px;
+    margin-top: 281px;
+    margin-right: 74px;
+    
+}
+
+
+.icon-tw-Keelung{
+
+    font-size: 21px;
+    margin-top: 5px;
+    margin-right: 59px;
+    z-index: 1010;
+  
+}
+
+
+.icon-tw-Taoyuan{
+
+    font-size: 87px;
+    margin-top: 15px;
+    margin-right: 113px;
+    
+}
+
+
+.icon-tw-Hsinchu{
+
+    font-size: 83px;
+    margin-right: 120px;
+    margin-top: 46px;
+    
+}
+.icon-tw-HsinchuCity{
+
+    font-size: 26px;
+    margin-right: 187px;
+    margin-top: 61px;
+}
+
+
+.icon-tw-Miaoli{
+
+    font-size: 69px;
+    margin-right: 145px;
+    margin-top: 82px;
+    
+}
+
+
+.icon-tw-Taichung{
+
+    font-size: 73px;
+    margin-right: 114px;
+    margin-top: 127px;
+    
+}
+
+
+
+.icon-tw-Nantou{
+
+    font-size: 121px;
+    margin-right: 129px;
+    margin-top: 164px;
+    
+}
+
+
+
+.icon-tw-Changhua{
+
+    font-size: 66px;
+    margin-right: 231px;
+    margin-top: 171px;
+}
+
+
+.icon-tw-Yunlin{
+
+    font-size: 53px;
+    margin-top: 233px;
+    margin-right: 218px;
+}
+
+
+.icon-tw-Chiayi{
+
+    font-size: 66px;
+    margin-top: 263px;
+    margin-right: 189px;
+
+}
+.icon-tw-ChiayiCity{
+
+    font-size: 10px;
+    margin-top: 285px;
+    margin-right: 255px;
+    z-index: 1010;
+}
+
+
+.icon-tw-Tainan{
+
+    font-size: 79px;
+    margin-right: 232px;
+    margin-top: 300px;
+}
+
+
+.icon-tw-Kaohsiung{
+
+    font-size: 160px;
+    margin-top: 287px;
+    margin-right: 165px;
+}
+
+
+.icon-tw-Pingtung{
+
+    font-size: 160px;
+    margin-top: 379px;
+    margin-right: 165px;
+}
+
+
+.icon-tw-Penghu{
+
+    font-size: 110px;
+    margin-top: 250px;
+    margin-right: 362px;
+}
+
+
+.twNunber {
+    
+    display:flex;
+    flex-direction:column; 
+    justify-content:center;
+    height:auto;
+}
+
+
+.twNunber img{
+    
+    width: 70%;
+    height: auto;
+    padding-bottom: 25px;
+    
+}
+
+
+.downloadIcons img{
+    
+    width: 30%;
+    height: auto;
+    padding: 35px 2px 20px 2px;
+}
+
+.img-qr-logo{
+    
+
+    width: 15% !important;
+    height: auto;
+
+}
+
+.img-life-logo {
+    
+    margin-top: 9px;
+    width: 15%!important;
+}
+
+.Text-icon i{
+    
+    font-size: 10px;
+    color: rgba(225, 93, 39, 0.5);
+}
+
+
+.addpage{
+    
+    height: 100vh;
+    text-align: center;
+    padding: 100px;
+}
+
+#ServiceIcon{
+    
+    width: 40px;
+    top: 75px;
+    right: -5px;
+    position: fixed;
+    background-color: #34304A;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+#ServiceIcon i{
+    
+    font-size: 25px;
+    
+}
+
+
+#ServiceIcon a{
+    
+    color: white;
+}
+
+
+
+
+
+/*boot=======================*/
+
+
+.card {
+    
+    height: 55px;
+    padding-top: 15px;
+    position: relative;
+    border: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    
+}
+
+
+.card-text {
+    
+    padding: 5px;
+    font-size: 12px;
+}
+
+.nav-link{
+    font-size: 12px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    font-size: 12px;
+    background-color: #fff;
+    border-color: #ddd #ddd #fff;
+}
+    
+/*boot=======================*/
+
+
+
+.jumbotron h3{
+    
+    font-size: 21px;
+    color: #e15d27;
+    margin-bottom: 15px!important;
+}
+
+
+.jumbotron h5{
+    
+    font-size: 16px;
+    color: #34304A;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+#infoForPhone button{
+    
+    margin-bottom: 25px;
+}
+
+#informationBar h4{
+    
+    color: #34304A;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 5px !important;
+}
+
+
+.btn-atm{
+    
+    background-color: #e15d27;
+    color: white;
+}
+
+.btn-atm:focus,
+.btn-atm:hover{
+    
+    background-color: #f07846;
+    color: white;
+}
+
+
+#search input{
+    
+    outline: none;
+}
+
+::placeholder{
+    
+    font-size: 14px;
+}
+
+
+#informationBar {
+
+    width: 390px;
+
+}
+
+
+
+.twMapText p{
+    
+    font-size: 14px;
+    color: #afafaf!important;
+    text-align: left;
+    font-weight: 400!important;
+    line-height: 30px;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    padding: 3px 15px;
+    margin-bottom: -30px;
+}
+
+
+.AtmUpdata{
+    
+    position: absolute;
+    right: 0;
+    margin-top: -17%;
+    margin-right: 5%;
+    font-size: 11px;
+    color: #bbbbbb;
+}
+
+.MoreH2uP p{
+    
+    text-align: left;
+    line-height: 27px;
+}
+
+
+
+
+
+    
+@media (min-width: 480px){
+    
+.MapIcons {
+
+    margin-right: 55px;
+
+}
+
+.AtmUpdata {
+
+    position: absolute;
+    right: 0;
+    margin-top: -17%;
+    margin-right: 15%;
+    font-size: 11px;
+    color: #bbbbbb;
+}
+    
+
+
+/*
+    
+.keytit {
+
+    margin-top: 130px;
+    font-size: 30px;
+}
+    
+    
+*/
+    
+    
+    
+    
+}
+
+
+
+@media (min-width: 576px){
+    
+    
+.AtmUpdata{
+    
+    position: absolute;
+    right: 0;
+    margin-top: -15%;
+    margin-right: 20%;
+    font-size: 13px;
+    color: #bbbbbb;
+} 
+    
+    
+.control-h{
+    
+    height: 50px!important;
+} 
+    
+.img-life-logo {
+    
+    margin-top: 22px;
+    width: 17%!important;
+}
+    
+    
+.twNunber img{
+    
+    width: 60%;
+    height: auto;
+    padding-bottom: 25px;
+    
+}
+    
+    
+.MapMenu{
+
+    position: absolute;
+    text-align: left;
+    margin-left: 15px;
+    
+}
+    
+/*
+.keytit {
+    margin-top: 140px;
+    font-size: 35px;
+}
+*/
+
+  
+    
+
+    
+.CollectItem2Item i{
+    
+    font-size: 12px;
+    color: #e15d27;
+    padding-left: 15px;
+}
+    
+
+.UpDataContent p {
+
+    height: 350px;
+}
+
+
+.UpDataContent h4 {
+
+    font-size: 1.3rem;
+
+}
+    
+    
+
+    
+
+    
+    
+}
+    
+    
+    
+    
+
+@media (min-width: 768px){
+    
+    
+
+.AtmUpdata{
+    
+    position: absolute;
+    right: 0;
+    margin-top: -10%;
+    margin-right: 23%;
+    font-size: 14px;
+    color: #bbbbbb;
+} 
+    
+ 
+    
+.control-h{
+    
+    height: auto!important;
+} 
+    
+    
+.img-life-logo {
+    
+    margin-top: 22px;
+    width: 15%!important;
+}
+    
+    
+.downloadIcons img{
+    
+    width: 25%;
+
+}
+
+.img-qr-logo{
+    
+
+    width: 13% !important;
+
+
+}
+    
+.UserContent-img {
+    
+    width: 75%;
+    margin: auto;
+
+}
+
+    
+    
+.H2Ufirst-img img{
+    
+    width: 100%;
+    height: auto;
+}
+    
+    
+.bard #logo{
+   
+
+    width: 110px; 
+    z-index: 1090;
+    
+}
+
+    
+    
+.UserILikeBtn{
+
+    font-size: 35px;
+    background-color: #54d4bf;
+}
+    
+    
+.UserILikeBtn:hover{
+
+    color: white;
+}
+    
+ 
+    
+    
+.twNunber img{
+    
+    width: 45%;
+    
+}
+    
+    
+
+    
+    
+.MapMenu {
+
+    margin-left: 15%;
+}
+  
+
+/*
+  
+.keytit {
+    margin-top: 180px;
+    font-size: 46px;
+}
+    
+*/
+    
+
+    
+    
+.UserMarTop15{
+    
+    margin-top: 15px;
+}
+    
+    
+
+    
+    
+.UpDataContent h4{
+    
+    font-size: 1.5rem;
+
+}
+    
+.UpDataContent p{
+ 
+    height: 350px;
+}
+    
+    
+    
+    
+#toogleBtn {
+
+    display: none;
+
+}
+
+
+.bard #logo {
+
+    text-align: left;
+
+}
+
+
+.bard #logo img {
+
+    margin-left: 25px;
+
+}
+
+
+    
+#navMenu{
+    
+    width: 100%;
+    height: 65px;
+  
+}
+    
+    
+    
+#navMenu ul {
+    
+    float: right;
+    background-color: transparent;
+    width: auto;
+    padding-top: 20px;
+    margin-left: 0px;
+    margin-right: 25px;
+}
+
+#navMenu li {
+    
+    
+    
+    display: inline;
+    padding: 24px 5px;
+    cursor: pointer;
+    border-bottom: none;
+   
+
+
+}
+    
+#navMenu li:hover,
+#navMenu li:hover a{
+    
+    background-color: #e15d27;
+    color: white;
+}
+
+    
+    
+
+
+
+#navMenu li:first-child {
+
+    border-top: none;
+}
+    
+    
+    
+#navMenu li a {
+
+    color: #656565;
+}
+    
+    
+
+    
+    
+
+
+
+
+}
+
+
+
+@media (min-width: 992px){
+    
+    
+.AtmUpdata{
+    
+    position: absolute;
+    right: 0;
+    margin-top: -15%;
+    margin-right: 0%;
+    font-size: 14px;
+    color: #bbbbbb;
+}
+    
+    
+.Item-l i:first-child{
+    
+    padding-left: 70px!important;
+    
+}
+    
+    
+.myVideo {
+    
+    margin-top: 0px; 
+
+}
+      
+.img-life-logo {
+    
+    margin-top: 22px;
+    width: 10%!important;
+}
+    
+    
+    
+.UserContent {
+    
+    padding-bottom: 40px;
+}
+    
+    
+.CollectItemBoder{
+    
+    padding: 0 140px;
+}
+    
+.CollectItem2 {
+    
+    padding: 0 140px;
+}
+    
+    
+.downloadIcons img{
+    
+    width: 18%;
+
+}
+
+.img-qr-logo{
+    
+
+    width: 9% !important;
+
+
+}
+
+    
+    
+.UserContent h3{
+    
+    color: #e15d27!important;
+    padding-top: 20px;
+
+}
+    
+.User p{
+    
+    color: #34304A!important;
+
+}
+    
+    
+.UserContent-img {
+    
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+
+}
+    
+    
+    
+.twNunber img{
+    
+    width: 35%;
+    
+}
+
+    
+.MapMenu {
+
+    margin-left: 15%;
+}
+    
+
+    
+    
+/*
+    
+.keytit {
+    margin-top: 250px;
+    font-size: 65px;
+}
+*/
+    
+    
+.CollectMarTop-350{
+    
+    margin-top: 250px;
+}
+    
+
+    
+.User{
+
+    background-position: 0 200px;
+}
+
+    
+
+.user-item{
+    
+    position: relative;
+}
+
+
+.user-itemContent{
+    
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+    
+
+    
+    
+    
+.UpDataContent p{
+ 
+    height: 175px;
+} 
+    
+    
+    
+    
+}
+
+
+@media (min-width: 1200px){
+    
+    
+.AtmUpdata{
+    
+    position: absolute;
+    right: 0;
+    margin-top: -15%;
+    margin-right: 10%;
+    font-size: 14px;
+    color: #bbbbbb;
+}
+    
+    
+    
+.twNunber {
+    
+    display:flex;
+    flex-direction:column; 
+    justify-content:center;
+    height:780px;
+}
+    
+
+
+    
+    
+.UserContent-img {
+
+    margin: auto;
+
+}
+    
+    
+.twNunber img{
+    
+    width: 25%;
+    
+}
+
+    
+.CollectMarTop-350 {
+    margin-top: 300px;
+}
+    
+.MapMenu {
+
+    margin-left: 20%;
+}
+    
+.MapIcons {
+    
+    margin-right: 20%;
+}
+    
+    
+
+    
+    
+    
+}
+

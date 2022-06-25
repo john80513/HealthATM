@@ -1,0 +1,43 @@
+﻿   html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+
+        #informationBar {
+            
+            position: absolute;
+            top: 75px;
+            left: 25px;
+            width: 20vw;
+            height: 80vh;
+            background-color: #ffffff;
+            box-shadow: 3px 3px 12px grey;
+            padding: 3px;
+            overflow: auto;
+        }
+
+        #myTabContent {
+            margin-top:15px;
+
+        }
+
+        .card:hover {
+            cursor:pointer;
+            color:#0d82e6                      
+        }
+        .card-title {
+            padding-left:10px;
+            padding-top:5px;
+            
+        }
+
+        .card-text {
+            padding:5px;
+        }
